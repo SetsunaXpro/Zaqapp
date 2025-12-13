@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "936878521640",
+    "project_id": "zaqapp-39377",
+    "storage_bucket": "zaqapp-39377.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936878521640:android:67943dc5ecc189a2d1641d",
+        "android_client_info": {
+          "package_name": "com.example.marcha_branch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrMRjCnVXk6sj3PFT8M0sp9l-qU3yn2UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936878521640:android:5468297cc7ff18fed1641d",
+        "android_client_info": {
+          "package_name": "com.example.zaqapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrMRjCnVXk6sj3PFT8M0sp9l-qU3yn2UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
