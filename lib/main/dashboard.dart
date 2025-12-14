@@ -22,24 +22,24 @@ class DashboardPage extends StatelessWidget {
           children: [
             _buildGridButton(
               context,
-              title: 'Zakat Calculator',
-              icon: Icons.calculate,
+              title: 'Pay Your Zakat Fitrah',
+              icon: Icons.mosque,
               color: Colors.teal,
-              page: const PlaceholderPage(title: 'Zakat Calculator'),
+              page: const PlaceholderPage(title: 'Zakat Fitrah'),
             ),
             _buildGridButton(
               context,
-              title: 'Pay Your Zakat',
+              title: 'Pay Your Zakat Maal',
               icon: Icons.wallet,
               color: Colors.indigo,
-              page: const PlaceholderPage(title: 'Pay Your Zakat'),
+              page: const PlaceholderPage(title: 'Pay Your Maal'),
             ),
             _buildGridButton(
               context,
-              title: 'Donation History',
+              title: 'Donate',
               icon: Icons.history,
               color: Colors.orange,
-              page: const PlaceholderPage(title: 'Donation History'),
+              page: const PlaceholderPage(title: 'Donate'),
             ),
             _buildGridButton(
               context,
