@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zaqapp/main/donate.dart';
 
 class CalculatorPage extends StatefulWidget {
   const CalculatorPage({super.key});
@@ -15,7 +16,6 @@ class _CalculatorPageState extends State<CalculatorPage>
   final TextEditingController _peopleController = TextEditingController();
   final TextEditingController _ricePriceController =
       TextEditingController(text: '15000');
-
   double _fitrahTotal = 0;
 
   // Maal
@@ -53,6 +53,18 @@ class _CalculatorPageState extends State<CalculatorPage>
     setState(() {
       _maalTotal = wealth * 0.025;
     });
+  }
+
+  void _goToPayment(double amount, String type) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (_) => DonatePage(
+          amount: amount,
+          zakatType: type,
+        ),
+      ),
+    );
   }
 
   @override
@@ -109,6 +121,12 @@ class _CalculatorPageState extends State<CalculatorPage>
             'Total: Rp ${_fitrahTotal.toStringAsFixed(0)}',
             style: const TextStyle(fontWeight: FontWeight.bold),
           ),
+          const SizedBox(height: 16),
+          if (_fitrahTotal > 0)
+            ElevatedButton(
+              onPressed: () => _goToPayment(_fitrahTotal, 'Fitrah'),
+              child: const Text('Proceed to Payment'),
+            ),
         ],
       ),
     );
@@ -138,6 +156,12 @@ class _CalculatorPageState extends State<CalculatorPage>
             'Total: Rp ${_maalTotal.toStringAsFixed(0)}',
             style: const TextStyle(fontWeight: FontWeight.bold),
           ),
+          const SizedBox(height: 16),
+          if (_maalTotal > 0)
+            ElevatedButton(
+              onPressed: () => _goToPayment(_maalTotal, 'Maal'),
+              child: const Text('Proceed to Payment'),
+            ),
         ],
       ),
     );
