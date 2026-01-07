@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zaqapp/ui/bottom_nav_bar.dart';
+import 'package:zaqapp/UI/bottom_nav_bar.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key});

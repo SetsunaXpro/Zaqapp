@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zaqapp/main/calculator.dart';
 import 'package:zaqapp/main/dashboard.dart';
-import 'package:zaqapp/ui/payment.dart';
+import 'package:zaqapp/UI/payment.dart';
 
 class QuickActions extends StatelessWidget {
   const QuickActions({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zaqapp/ui/state.dart';
-import 'package:zaqapp/ui/payment.dart';
+import 'package:zaqapp/UI/state.dart';
+import 'package:zaqapp/UI/payment.dart';
 
 enum ActiveField { people, ricePrice, wealth }
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:zaqapp/ui/state.dart';
+import 'package:zaqapp/UI/state.dart';
 
 void showZakatPaymentSheet(BuildContext context) {
   showModalBottomSheet(
