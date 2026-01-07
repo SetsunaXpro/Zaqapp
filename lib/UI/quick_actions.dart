@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zaqapp/main/calculator.dart';
 import 'package:zaqapp/main/dashboard.dart';
+import 'package:zaqapp/ui/payment.dart';
 
 class QuickActions extends StatelessWidget {
   const QuickActions({super.key});
@@ -30,13 +31,8 @@ Expanded(
             icon: Icons.volunteer_activism,
             label: 'Pay\nZakat',
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => const DashboardPage(),
-                ),
-              );
-            },
+               showZakatPaymentSheet(context);
+},
           ),
         ),
       ],

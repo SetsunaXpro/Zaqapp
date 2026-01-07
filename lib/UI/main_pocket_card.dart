@@ -40,7 +40,7 @@ class MainPocketCard extends StatelessWidget {
           const SizedBox(height: 8),
           Row(
             children: const [
-              Text("5065 6325 9029"),
+              Text("5067 4578 2317"),
               SizedBox(width: 8),
               Icon(Icons.copy, size: 16),
             ],

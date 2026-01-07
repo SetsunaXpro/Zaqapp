@@ -15,7 +15,7 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  int _page = 0;
+  int _page = 1;
 
   final List<Widget> _pages = const [       // index 0
     HistoryPage(),     // index 1 index 2      // index 3
